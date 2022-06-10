@@ -3,7 +3,7 @@ import boto3
 from botocore.exceptions import ClientError
 
 def get_s3_client(profile_name, region_name):
-    print('get_glue_client: profile_name=%s, region_name=%s' % (profile_name, region_name))
+    print('get_s3_client: profile_name=%s, region_name=%s' % (profile_name, region_name))
 
     session = boto3.Session(profile_name=profile_name)
     s3 = session.client('s3',
